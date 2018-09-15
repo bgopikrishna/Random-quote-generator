@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+<body onload="onLoadQuote()">
+
+    <div class="main" id="quote-box">
+       <div class="quoteicon" >
+           <p>&ldquo;</p>
+
+       </div>
+        <blockquote >
+            <div id="text">
+
+            </div>
+            <div id="author">
+
+            </div>
+        </blockquote>
+        <div class="buttons">
+            <a href="https://twitter.com/intent/tweet" id="tweet-quote"><i class="fab fa-twitter-square" style="font-size:40px;" onmouseover="this.style.color='#1DA1F2' "  onmouseout="this.style.color='#333' "></i> </a>
+            <button id="new-quote">Get quote</button>
+        </div>
+    </div>
+    <footer>
+       
+        <span>API by <a href="http://quotesondesign.com/api-v4-0/" target="_blank">quotesdesign</a></span>
+        <span>By <a href="https://github.com/bgopikrishna">Gopi Krishna</a></span>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="quotes.js"></script>
+</body>
+
+</html>

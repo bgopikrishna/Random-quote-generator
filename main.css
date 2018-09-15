@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Ruslan+Display");
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(324deg, #1c7dbf, #20bcd5, #2bdf89, #6a6c6b);
+background-size: 800% 800%;
+
+-webkit-animation: bgAnimation 11s ease infinite;
+-moz-animation: bgAnimation 11s ease infinite;
+animation: bgAnimation 11s ease infinite;
+
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  flex-direction: column;
+  display: flex;
+  font-weight: bolder;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  min-height: 100vh;
+  line-height: 2;
+  z-index: 0;
+}
+
+.main {
+  width: auto;
+  height: auto;
+  width: 350px;
+  background-color: whitesmoke;
+  padding: 2em;
+  /* max-width: 80%; */
+  color: #111111;
+  z-index: 3;
+  border-radius: 7px;
+ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+}
+blockquote {
+  text-transform: capitalize;
+  /* min-width: 300px; */
+}
+
+.main .quoteicon {
+ 
+  
+  float: left;
+  margin-right: 10px;
+ 
+ height: 40px;
+  font-size: 40px;
+  /* padding: 1em; */
+  font-family: "Ruslan Display", cursive;
+}
+/* .main #text::after {
+  content: attr(data-right);
+  display: block;
+  font-family: 'Ruslan Display', cursive;
+
+  margin-left: 20px;
+  font-size: 40px;
+ 
+} */
+.main #author {
+  display: block;
+  float: right;
+  font-weight: lighter;
+  font-style: italic;
+}
+.main #author::before {
+  content: "-   ";
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-shadow: 0.5px 0.5px 0.7px black;
+}
+
+.buttons a{
+  text-decoration: none;
+  height: 40px;
+  
+}
+.buttons button {
+  outline: none;
+  border: none;
+  color: #eaeaea;
+  background: #111111;
+  transition: 0.4s;
+  
+
+}
+.buttons button:hover {
+  z-index: 5;
+  text-shadow: 0.5px 0.5px 0.7px black;
+  background: #333333;
+
+}
+footer {
+  margin-top: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: monospace;
+  width: 350px;
+
+
+}
+footer span a {
+  text-decoration: none;
+  text-decoration-line: underline;
+  color: #111111;
+}
+@-webkit-keyframes bgAnimation {
+  0%{background-position:0% 23%}
+  50%{background-position:100% 78%}
+  100%{background-position:0% 23%}
+}
+@-moz-keyframes bgAnimation {
+  0%{background-position:0% 23%}
+  50%{background-position:100% 78%}
+  100%{background-position:0% 23%}
+}
+@keyframes bgAnimation { 
+  0%{background-position:0% 23%}
+  50%{background-position:100% 78%}
+  100%{background-position:0% 23%}
+}
