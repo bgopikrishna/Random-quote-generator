@@ -4,6 +4,7 @@ let tweeturl =
   "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=";
 
 let quoteStored;
+let quoteAuthor;
 
 //function to generate random quote
 //start
@@ -21,11 +22,19 @@ function randomQuote() {
           function() {
             $(this).animate({ opacity: 1}, 500);
             $('#text').html(post.content);
+            quoteStored = document.querySelector("#text").textContent;
+            //tweet button
+            $("#tweet-quote").attr({
+              href: tweeturl + "'" + quoteStored + "' - " +quoteAuthor,
+              target: "_blank"
+            });
+            // tweet button end
           }
         );
       
       
-      quoteStored = document.querySelector("#text").textContent;
+      
+      quoteAuthor= document.querySelector("#author").textContent;
     },
     cache: false
   });
@@ -38,19 +47,12 @@ function onLoadQuote() {
 }
 
 //get new quote button
-$("button").click(function(e) {
+$("#new-quote").click(function(e) {
   randomQuote();
 });
 //
 
 
 
-//tweet button
-$("a.buttons").click(function(e) {
-  e.preventDefault();
 
-  $("a.buttons").attr({
-    href: tweeturl + "'" + quoteStored + "'",
-    target: "_blank"
-  });
-});
+
