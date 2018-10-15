@@ -89,6 +89,7 @@ blockquote {
 .buttons a{
   text-decoration: none;
   height: 40px;
+  color: inherit;
   
 }
 .buttons button {
